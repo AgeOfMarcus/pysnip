@@ -10,7 +10,7 @@ def parse_args():
     return p.parse_args()
 
 def main(args):
-    res = client.upload(
+    res = client.publish(
         args.name,
         args.password or getpass.getpass(),
         open(args.FILE, "r").read(),
