@@ -3,7 +3,7 @@ import requests, sys
 
 class PysnipImporter:
     """ 
-    `from pysnip import quick_sort` will search through pysnip.marcusweinberger.repl.co's db and attempt to download and import quick_sort
+    `from pysnip import hello_world` will search through pysnip.marcusweinberger.repl.co's db and attempt to download and import hello_world
     """
     API_URL = "https://pysnip.marcusweinberger.repl.co"
 
@@ -32,7 +32,7 @@ class PysnipImporter:
 
     @classmethod
     def get_code(cls, fullname):
-        return compile(cls._fetch_code(cls._fetch_url(fullname)), 'pysnips.marcusweinberger.repl.co/snip/' + fullname, 'exec')
+        return compile(cls._fetch_code((u:=cls._fetch_url(fullname))), u, 'exec')
 
     @classmethod
     def get_source(cls, fullname):
