@@ -46,6 +46,7 @@ class PysnipImporter:
 
     @classmethod
     def _fetch_url(cls, query):
+        query = query.replace("pysnip.", "")
         res = requests.get(cls.API_URL + "/search", params={
             'q':query,
         }).json()
