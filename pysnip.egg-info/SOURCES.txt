@@ -1,0 +1,11 @@
+README.md
+setup.py
+pysnip/__init__.py
+pysnip/__main__.py
+pysnip/client.py
+pysnip.egg-info/PKG-INFO
+pysnip.egg-info/SOURCES.txt
+pysnip.egg-info/dependency_links.txt
+pysnip.egg-info/not-zip-safe
+pysnip.egg-info/requires.txt
+pysnip.egg-info/top_level.txt

@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setuptools.setup(name="pysnip",
-    version="1.2.1",
+    version="1.2.2",
     description="Python snippets",
     long_description=read("README.md"),
     url="https://github.com/AgeOfMarcus/pysnip",
